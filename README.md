@@ -1,4 +1,4 @@
 # Website CS-Market "SkinsLove.gg"
-**email:admin@skinslove.gg**
+**email : admin@skinslove.gg**
 <br>
-**password:admin123**
+**password : admin123**
