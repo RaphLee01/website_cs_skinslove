@@ -1,0 +1,199 @@
+/* 
+  SkinsLove.gg - Custom CSS Stylesheet
+  This file centralizes all theme styles, layouts, animations, and transitions.
+*/
+
+/* Reset dan Desain Dasar Tema Gelap Mewah */
+body { 
+    background-color: #0a0a0c; 
+    color: #f8f9fa; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+
+/* Navigasi Navbar Kustom */
+.navbar-custom { 
+    background-color: #121216; 
+    border-bottom: 1px solid rgba(244, 63, 94, 0.2); 
+}
+
+/* Efek Gradasi Rose-Pink Eksklusif */
+.text-gradient { 
+    background: linear-gradient(45deg, #f43f5e, #ec4899); 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+}
+
+/* Tombol Gradasi Pink */
+.btn-gradient { 
+    background: linear-gradient(45deg, #f43f5e, #ec4899); 
+    border: none; 
+    color: white; 
+    font-weight: 600; 
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+.btn-gradient:hover { 
+    transform: translateY(-2px); 
+    color: white; 
+    opacity: 0.9; 
+}
+
+/* Elemen Form Input Kustom */
+.form-control, .form-select { 
+    background-color: #1a1a22; 
+    border: 1px solid #2d2d39; 
+    color: white; 
+}
+
+.form-control::placeholder, .form-select::placeholder {
+    color: #94a3b8 !important;
+    opacity: 0.8 !important;
+}
+
+.form-control:focus, .form-select:focus { 
+    background-color: #1a1a22; 
+    border-color: #f43f5e; 
+    color: white; 
+    box-shadow: 0 0 0 0.25rem rgba(244, 63, 94, 0.25); 
+}
+
+/* Kartu Skin CS2 dengan Efek Hover Melayang */
+.skin-card { 
+    background-color: #121216; 
+    border: 1px solid #2d2d39; 
+    border-radius: 12px; 
+    overflow: hidden; 
+    transition: all 0.3s ease; 
+}
+
+.skin-card:hover { 
+    transform: translateY(-5px); 
+    border-color: #f43f5e; 
+    box-shadow: 0 5px 15px rgba(244, 63, 94, 0.2); 
+}
+
+/* Posisi Badge Wear Kategori di Pojok (Bukan Tengah!) */
+.badge-wear { 
+    font-size: 0.75rem; 
+    font-weight: 700; 
+    padding: 4px 10px; 
+    border-radius: 6px; 
+    background-color: rgba(10, 10, 12, 0.85) !important; 
+    border: 1px solid rgba(244, 63, 94, 0.2);
+    color: #f43f5e !important; 
+    backdrop-filter: blur(4px);
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 10;
+}
+
+/* Sidebar Filter di Pasar */
+.sidebar-filter { 
+    background-color: #121216; 
+    border: 1px solid #2d2d39; 
+    border-radius: 12px; 
+}
+
+/* Gaya Khusus Halaman Keranjang Belanja */
+.cart-card { 
+    background-color: #121216; 
+    border: 1px solid #2d2d39; 
+    border-radius: 12px; 
+}
+
+.checkout-box { 
+    background-color: #121216; 
+    border: 1px solid rgba(244, 63, 94, 0.3); 
+    border-radius: 12px; 
+}
+
+/* Tab Custom */
+.tab-custom { 
+    background-color: #121216; 
+    border: 1px solid #2d2d39; 
+    border-radius: 12px; 
+}
+
+.notif-item { 
+    background-color: #121216; 
+    border-left: 4px solid #f43f5e; 
+    border-radius: 4px; 
+}
+
+/* Dashboard Administrator */
+.admin-card { 
+    background-color: #121216; 
+    border: 1px solid #2d2d39; 
+    border-radius: 12px; 
+}
+
+/* Kontras Warna Teks */
+.text-muted {
+    color: #94a3b8 !important;
+}
+
+.hover-white:hover {
+    color: #ffffff !important;
+    transition: color 0.2s;
+}
+
+/* Carousel Beranda Kustom */
+.carousel-custom-item {
+    background-color: #121216;
+    border-radius: 20px;
+    border: 1px solid #2d2d39;
+    padding: 30px;
+}
+
+/* Kartu Statistik Beranda */
+.stat-card {
+    background-color: #121216;
+    border: 1px solid #2d2d39;
+    border-radius: 16px;
+    padding: 24px;
+    transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+    border-color: rgba(244, 63, 94, 0.3);
+    transform: translateY(-3px);
+}
+
+.stat-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+/* Hero Section Beranda */
+.hero-section {
+    position: relative;
+    overflow: hidden;
+    background: radial-gradient(circle at top right, rgba(244, 63, 94, 0.08), transparent 60%);
+}
+
+/* Gaya Kustom untuk Nav Pills di Halaman Inventori */
+#pills-tab .nav-link {
+    border: 1px solid rgba(255, 255, 255, 0.15) !important;
+    color: #94a3b8 !important;
+    background: transparent !important;
+    transition: all 0.2s ease-in-out;
+}
+
+#pills-tab .nav-link:hover {
+    border-color: #f43f5e !important;
+    color: #ffffff !important;
+    background: rgba(244, 63, 94, 0.1) !important;
+}
+
+#pills-tab .nav-link.active {
+    background: linear-gradient(45deg, #f43f5e, #ec4899) !important;
+    border-color: transparent !important;
+    color: #ffffff !important;
+    box-shadow: 0 4px 15px rgba(244, 63, 94, 0.3) !important;
+}
